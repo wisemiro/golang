@@ -16,12 +16,6 @@ func init() {
 }
 
 func main() {
-	b := &db.User{}
-	data, err := proto.Marshal(b)
-	if err != nil {
-		log.Fatal("Marsh err", err)
-	}
-	fmt.Println(data)
 	r := router.SetupRouter()
 
 	// Listen and Serve in 0.0.0.0:8081
