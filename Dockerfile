@@ -7,6 +7,8 @@ RUN apk update && apk add alpine-sdk git && rm -rf /var/cache/apk/*
 RUN mkdir -p /app
 WORKDIR /app
 
+RUN export GO111MODULE=on
+
 COPY go.mod .
 COPY go.sum .
 RUN go mod download
@@ -22,6 +24,6 @@ RUN mkdir -p /app
 WORKDIR /app
 COPY --from=builder /app .
 
-EXPOSE 8001
+EXPOSE 8081
 
 ENTRYPOINT ["./app"]
