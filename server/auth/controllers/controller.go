@@ -1,9 +1,9 @@
 package controller
 
 import (
+	"auth/server/config"
 	"database/sql"
 	"fmt"
-	"auth/server/config"
 	"net/http"
 	"time"
 
@@ -168,3 +168,4 @@ func checkAndRetrieveUserIDViaEmail(createReset db.CreateReset) (int, bool) {
 	}
 	return id, true
 }
+

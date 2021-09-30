@@ -4,10 +4,6 @@ import (
 	"auth/server/db"
 	"auth/server/router"
 	_ "database/sql"
-	"fmt"
-	"log"
-
-	proto "github.com/golang/protobuf/proto"
 	_ "github.com/lib/pq"
 )
 

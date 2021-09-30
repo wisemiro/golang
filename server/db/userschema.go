@@ -1,5 +1,6 @@
 package db
 
+
 //CreateUsersTable //creates users table
 func CreateUsersTable() {
 	DB.Query(`

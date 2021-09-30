@@ -1,7 +1,7 @@
 package router
 
 import (
-	"auth/server/controllers"
+	"auth/server/auth/controllers"
 	"auth/server/middlewares"
 
 	"github.com/gin-gonic/gin"

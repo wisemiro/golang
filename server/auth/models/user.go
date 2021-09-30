@@ -1,4 +1,4 @@
-package db
+package models
 
 import (
 	"log"
@@ -38,6 +38,8 @@ type User struct {
 	CreatedAt string `json:"created_at"`
 	UpdatedAt string `json:"updated_at"`
 }
+
+
 
 //HashPassword hashes user password
 func HashPassword(user *Register) {
